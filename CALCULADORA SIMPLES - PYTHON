@@ -1,0 +1,32 @@
+def add(a,b):
+    return a+b
+
+def sub(a,b):
+    return a-b
+
+def mul(a,b):
+    return a*b
+def div(a,b):
+    return a/b
+
+print("Selecione a operacao:")
+print("1 - Adicao")
+print("2 - Subtracao")
+print("3 - Multiplicacao")
+print("4 - Divisao")
+
+sel = int(input("Selecione a operacao(1-4):"))
+
+a= int(input("Diga o primeiro numero:"))
+b= int(input("Diga o segundo numero:"))
+
+if sel == 1:
+    print(a, "+", b, "=", add(a,b))
+elif sel == 2:
+    print (a,"-",b,"=",sub (a,b))
+elif sel==3:
+    print(a,"*",b, "=", mul(a,b))
+elif sel==4:
+    print(a,"/",b,"=",div (a,b))
+else:
+    print(" valor inválido")
